@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Kay's Blog – {{ page.title }}</title>
+	{% include header.html%}
+</head>
+<body>
+	<p class="postTitle"><b>{{ page.title }}</b>&nbsp;&nbsp;&nbsp;&nbsp;<i>{{ page.time }}</i></p>
+	<div class="content">
+		{{content}}
+	</div>
+</body>
+{% include footer.html %}
+</html>
