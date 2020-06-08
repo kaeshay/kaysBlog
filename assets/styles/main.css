@@ -1,0 +1,169 @@
+html {
+	font-family: 'Space Mono', monospace;
+}
+
+a {
+	color: black;
+	text-decoration: none;
+}
+
+.blogTitle, .postTitle {
+	position: relative;
+	left: 40px;
+}
+
+.blogTitle:hover {
+	color: #d6d0a0;
+	text-decoration: underline wavy black;
+}
+
+.postTime{
+	text-align: right;
+}
+
+
+.content {
+	margin-left: 200px;
+	margin-right: 200px;
+/*	overflow: auto;*/
+	margin-bottom: 60px;
+}
+
+.content a{
+	color: black;
+}
+
+.content a:hover{
+	color: #ff7900;
+}
+
+table {
+	margin-bottom: 20px;
+}
+
+th, td{
+	border: 1px solid black;
+	padding: 10px;
+	font-size: 12px;
+}
+
+strong>em,
+em>strong,
+b>i,
+i>b{
+	font-style:normal;
+    font-weight:bold;
+    font-size: 20px;
+    border-bottom: 1px dashed;
+}
+
+img {
+	padding: 20px;
+	width: 500px;
+	display: block;
+/*	overflow: auto;*/
+}
+
+/*img:hover{
+	width: 700px;
+}
+*/
+.posts, .contacts {
+	/*positions: relative;
+	margin-left: 200px;
+	line-height: 25px;*/
+	list-style: none;
+}
+
+.posts a:hover{
+	 text-decoration-color: #ff7900;
+}
+
+.contacts ul{
+	list-style: none;
+	font-size: 10px;
+}
+
+.info {
+	display: none;
+}
+
+.name:hover .info{
+	display: block;
+}
+
+footer {
+	position: fixed;
+	left: 40px;
+	bottom: 0px;
+	padding: 20px;
+	font-size: 10px;
+	background-color: white;
+	height: 20px;
+	width: 100vw;
+}
+
+footer a:link{
+	padding: 10px;
+}
+
+footer a:hover{
+	 text-decoration: overline;
+	 text-decoration-color: pink;
+}
+
+
+
+@media (max-width: 12in){
+	.title {
+		font-size: 12px;
+		left: 10px;
+	}
+	.content {
+		margin-left: 70px;
+		margin-right: 90px;
+	}
+	.posts, .contacts{
+		margin-left: 10px;
+	}
+	footer {
+		left: -10px;
+		padding-bottom:30px;
+	}
+	footer a:link{
+		font-size: 7px;
+		line-height: 20px;
+	}
+}
+
+
+@media only screen 
+and (min-device-width : 375px) 
+and (max-device-width : 667px){
+	.blogTitle, .postTitle {
+		font-size: 30px;
+		text-align: center;
+	}
+	.content {
+		margin-left: 100px;
+		margin-right: 100px;
+		font-size: 30px;
+	}
+	.postExcerpt{
+		line-height:50px;
+	}
+	.posts, .contacts{
+		margin-left: 10px;
+	}
+	img{
+		width:100%;
+	}
+	footer {
+		left: -10px;
+		padding-bottom:30px;
+	}
+	footer a:link{
+		font-size: 7px;
+		line-height: 20px;
+	}
+}
